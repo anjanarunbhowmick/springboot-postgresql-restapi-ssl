@@ -26,7 +26,7 @@ keytool -importcert -file *"localhost-client.crt"* -keystore *ssl-truststore-ser
 keytool -importcert -file *"localhost-server.crt"* -keystore *ssl-truststore-client.jks* -alias *"client"*
 
 **Postman Settings for MTLS**
-![Postman Settings](https://photos.app.goo.gl/Kb7igHB13FbHRhWC8)
+![Postman Settings]([https://lh3.googleusercontent.com/pw/AP1GczM0spfIyvntXqtbUAIES-vuwunoB-Ts_Ue_8utslcA5Cx-6Kqy5CfpmGdaPBtjlSjv3AcIG6eD3N2a-odSBJQ4NJgNnjBnARkKwL8Q5KhInZRIW86N_=w723-h389-no])
 
 **Install Docker and execute below commands to install PostgreSQL DB**
 - docker pull postgres
