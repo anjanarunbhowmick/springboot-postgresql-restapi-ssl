@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "0f242fc8-4515-4073-951e-e3aee5b713c6",
+		"name": "RestAPI-SSL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"Anjan\", \"lastName\":\"Bhowmick\", \"emailId\":\"anjan.xxx@gmail.com\", \"phoneNumbers\":[{\"phoneNumber\":\"1234567890\"}, {\"phoneNumber\":\"1234567890\"}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/api/v1/employees",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePhone",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "employeeid",
+						"value": "5e907c28-de94-4d39-a9f3-c58d4eefd4ae",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"phoneNumber\":\"1234567891\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/api/v1/employees/phone",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchEmployee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/api/v1/employees",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchEmployeeById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/api/v1/employees/5e907c28-de94-4d39-a9f3-c58d4eefd4ae",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"5e907c28-de94-4d39-a9f3-c58d4eefd4ae"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"Anjan\", \"lastName\":\"Bhowmick\", \"emailId\":\"anjan.yyy@gmail.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/api/v1/employees/5e907c28-de94-4d39-a9f3-c58d4eefd4ae",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"5e907c28-de94-4d39-a9f3-c58d4eefd4ae"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePhone",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "employeeid",
+						"value": "5e907c28-de94-4d39-a9f3-c58d4eefd4ae",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"phoneNumber\":\"9934568896\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/api/v1/employees/phone/55cd16dd-aad9-401e-887f-51f6a3684108",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"phone",
+						"55cd16dd-aad9-401e-887f-51f6a3684108"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/api/v1/employees/859c9de3-9281-4a59-9b00-edf6a8bf1383",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"859c9de3-9281-4a59-9b00-edf6a8bf1383"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePhone",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "employeeid",
+						"value": "5e907c28-de94-4d39-a9f3-c58d4eefd4ae",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/api/v1/employees/phone/ac3e4424-63ee-4426-8334-7efa0dcc8f0c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"phone",
+						"ac3e4424-63ee-4426-8334-7efa0dcc8f0c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
